@@ -1,0 +1,96 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: var(--primaryBackgroundColor);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  font-weight: bold;
+  color: var(--primaryTextColor);
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+html {
+  /* our light-mode / default theme variable values */
+  --primaryTextColor: black;
+  --primaryBackgroundColor: white;
+
+}
+
+html.dark {
+  /* here's where we change the variable values for dark mode */
+  --primaryTextColor: white;
+  --primaryBackgroundColor: #282c34;
+    
+}
+
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro');
+
+
+.type {
+  border-right: solid 3px rgba(0,255,0,.75);
+  white-space: nowrap;
+  overflow: hidden;    
+  font-family: 'Source Code Pro', monospace;  
+  font-size: 28px;
+  color: var(--primaryTextColor);
+  margin: 0 auto;
+}
+
+/* Animation */
+.type {
+  animation: animated-text 4s steps(29,end) 1s 1 normal both,
+             animated-cursor 600ms steps(29,end) infinite;
+}
+
+/* text animation */
+
+@keyframes animated-text{
+  from{width: 0;}
+  to{width: 352px;}
+}
+
+/* cursor animations */
+
+@keyframes animated-cursor{
+  from{border-right-color: var(--primaryTextColor);}
+  to{border-right-color: transparent;}
+}
+
+
+.button {
+  margin-top: 25px;
+  margin-right: 25px;
+  position:absolute;
+  top:0;
+  right:0;
+}
+
