@@ -1,10 +1,21 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro');
+@import url('https://fonts.googleapis.com/css?family=Iceland');
+@import url('https://fonts.googleapis.com/css?family=Srisakdi');
+
+
 .App {
-  text-align: center;
+  text-align: left;
+  background-color: var(--primaryBackgroundColor);
 }
 
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+}
+
+.tang {
+  font-family: 'Srisakdi';
+  font-size: calc(20px + 1.5vmin);
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -18,12 +29,20 @@
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  font-weight: bold;
+  align-items: left;
+  justify-content:center;
+  font-size: calc(8px + 1.5vmin);
   color: var(--primaryTextColor);
+  font-family: 'Source Code Pro', monospace;  
+  margin-left: calc(20px + 3vmin);
+  text-justify: auto;
 }
+
+.vkp {
+  font-size: calc(20px + 3vmin);
+  font-family: 'Source Code Pro', monospace;  
+}
+
 
 .App-link {
   color: #61dafb;
@@ -40,42 +59,43 @@
 
 html {
   /* our light-mode / default theme variable values */
-  --primaryTextColor: black;
-  --primaryBackgroundColor: white;
+  --primaryTextColor: #17202A;
+  --primaryBackgroundColor: #EAECEE;
 
 }
 
 html.dark {
   /* here's where we change the variable values for dark mode */
-  --primaryTextColor: white;
-  --primaryBackgroundColor: #282c34;
+  --primaryTextColor: #EAECEE;
+  --primaryBackgroundColor: #17202A;
     
 }
 
-@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro');
+
 
 
 .type {
-  border-right: solid 3px rgba(0,255,0,.75);
+  border-right: solid 3px var(--primaryBackgroundColor);
   white-space: nowrap;
   overflow: hidden;    
-  font-family: 'Source Code Pro', monospace;  
-  font-size: 28px;
+  font-family: 'Iceland';
+  font-size: calc(20px + 4vmin);
   color: var(--primaryTextColor);
-  margin: 0 auto;
+  
+  text-align: left; 
 }
 
 /* Animation */
 .type {
-  animation: animated-text 4s steps(29,end) 1s 1 normal both,
-             animated-cursor 600ms steps(29,end) infinite;
+  animation: animated-text 1.5s steps(500,end) 0.5s 1 normal both,
+             animated-cursor 1s steps(60,end) infinite;
 }
 
 /* text animation */
 
 @keyframes animated-text{
   from{width: 0;}
-  to{width: 352px;}
+  to{width: calc(200px + 30vmin);}
 }
 
 /* cursor animations */
@@ -92,5 +112,43 @@ html.dark {
   position:absolute;
   top:0;
   right:0;
+}
+
+.social {
+  position:'absolute';
+  text-align: center;
+  overflow: hidden;
+  text-align: center;
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.marginLR15 {
+  margin-right: 25px;
+  margin-left: 25px;
+  bottom: 0;
+}
+
+.inbl {
+  display: inline-block;
+}
+
+.scaleOnHover {
+  transition: all 0.2s linear;
+  
+}
+
+.scaleOnHover:hover {
+  transform: scale(1.3);
+  
+}
+
+.ico25{
+  font-size: 25px;
+}
+
+.col {
+  color: var(--primaryTextColor);
 }
 

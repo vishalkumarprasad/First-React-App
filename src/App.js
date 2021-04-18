@@ -1,18 +1,18 @@
 import './App.css';
-import DarkToggle from './toggle'
+import DarkToggle from './toggle';
+import Head from './Head';
+import SocialButtonsPage from './social';
 
 function App() {
 
 
   return (
-    <div className="App">
-      <header className="App-header">
-        <DarkToggle />
-        <p className="type">
-          Hi, My name is V K P
-        </p>
-      </header>
-    </div>
+    <>
+      <DarkToggle/>
+      <Head/>
+      <SocialButtonsPage/>
+    </>
+
   );
 }
 
