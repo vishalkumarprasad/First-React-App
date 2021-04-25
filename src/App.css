@@ -95,7 +95,7 @@ html.dark {
 
 @keyframes animated-text{
   from{width: 0;}
-  to{width: calc(200px + 30vmin);}
+  to{width: calc(180px + 35vmin);}
 }
 
 /* cursor animations */
