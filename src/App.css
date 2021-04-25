@@ -79,7 +79,7 @@ html.dark {
   white-space: nowrap;
   overflow: hidden;    
   font-family: 'Iceland';
-  font-size: calc(20px + 4vmin);
+  font-size: calc(6px + 6vmin);
   color: var(--primaryTextColor);
   
   text-align: left; 
@@ -95,7 +95,7 @@ html.dark {
 
 @keyframes animated-text{
   from{width: 0;}
-  to{width: calc(180px + 35vmin);}
+  to{width: calc(30px + 60vmin);}
 }
 
 /* cursor animations */
