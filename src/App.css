@@ -81,7 +81,7 @@ html.dark {
   font-family: 'Iceland';
   font-size: calc(6px + 6vmin);
   color: var(--primaryTextColor);
-  
+  line-height: 50px;
   text-align: left; 
 }
 
